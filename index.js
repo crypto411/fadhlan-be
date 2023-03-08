@@ -7,6 +7,7 @@ app.get("/", (req, res) => {
         message: `Hello ${req.query.name ? req.query.name : "World"}`
     })
 })
-app.listen("2030", () => {
-    console.log("listening to port 2030")
+const port = "2030"
+app.listen(port, () => {
+    console.log(`listening to port ${port}`)
 })
